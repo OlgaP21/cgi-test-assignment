@@ -1,3 +1,7 @@
+/**
+ * https://www.bezkoder.com/angular-16-crud-example/
+ */
+
 import { Component, OnInit } from '@angular/core';
 import { Film } from '../../models/film.model';
 import { FilmService } from '../../services/film.service';
@@ -40,7 +44,7 @@ export class ProgrammeComponent implements OnInit {
   }
 
   recommendFilms() {
-    console.log(this.watchedFilms);
+    // console.log(this.watchedFilms);
     if (this.watchedFilms.length == 0) return;
     const watchedGenres = new Set<string>();
     for (let film of this.watchedFilms) {
@@ -48,12 +52,15 @@ export class ProgrammeComponent implements OnInit {
         watchedGenres.add(genre);
       });
     }
-    var films: Film[] = [];
+    const films = new Set<Film>();
     for (let genre of watchedGenres) {
       this.films.filter(film => film.genre.includes(genre)).forEach(function(film) {
-        films.push(film);
+        films.add(film);
       });
     }
-    this.films = films;
+    this.films = [];
+    for (let film of films) {
+      this.films.push(film);
+    }
   }
 }

@@ -434,3 +434,6 @@ Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: The connection wa
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:690)
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
 	... 16 more
+2024-03-29 11:00:42.529404+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "UPDATE [*]table SET watched=false WHERE watched=true"; expected "identifier"; SQL statement:
+UPDATE table SET watched=false WHERE watched=true [42001-224]
