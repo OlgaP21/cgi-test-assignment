@@ -1,0 +1,64 @@
+.seats {
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 60px;
+    width: 40%;
+}
+
+.free {
+    width: 25px;
+    height: 25px;
+    background-color: rgb(5, 184, 5);
+    border-radius: 8px;
+}
+
+.free:hover {
+    background-color: yellow;
+}
+
+.free:focus {
+    background-color: yellow;
+}
+
+.free:disabled {
+    background-color: rgb(5, 184, 5);
+}
+
+.taken {
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    border-radius: 8px;
+    color: white;
+}
+
+.screen {
+    margin: auto;
+    margin-top: 30px;
+    width: 25%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    background-color: black;
+    color: whitesmoke;
+}
+
+.confirm {
+    margin: auto;
+    padding: 5px;
+    width: fit-content;
+    font-size: 20px;
+    background-color: rgb(46, 46, 241);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.confirm:hover {
+    background-color: rgb(1, 1, 141);
+}
+
+.confirmButton {
+    color: white;
+    text-decoration-line: none;
+}

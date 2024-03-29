@@ -1,0 +1,61 @@
+<div class="buttonDiv">
+    <a class="recommend" routerLink="" (click)="recommendFilms()" >Soovita filme vaatamisajaloo põhjal</a>
+</div>
+<mat-tab-group mat-stretch-tabs="false" mat-align-tabs="center" animationDuration="0ms" (selectedTabChange)="retrieveFilms()">
+    <mat-tab label="01.04">
+        <div class="filmInfo" *ngFor="let film of filterByDate('01.04.24')">
+            <p class="title"><span class="time">{{ film.time }}</span> {{ film.title }} <span class="ageRating">({{ film.ageRating }})</span></p>
+            <p class="genre">{{ film.genre }}</p>
+            <p>Keel: {{ film.language }}</p>
+            <a class="buyTicket" routerLink="/programme/{{ film.id }}">Osta pileteid</a>
+        </div>
+    </mat-tab>
+    <mat-tab label="02.04">
+        <div class="filmInfo" *ngFor="let film of filterByDate('02.04.24')">
+            <p class="title"><span class="time">{{ film.time }}</span> {{ film.title }} <span class="ageRating">({{ film.ageRating }})</span></p>
+            <p class="genre">{{ film.genre }}</p>
+            <p>Keel: {{ film.language }}</p>
+            <a class="buyTicket" routerLink="/programme/{{ film.id }}">Osta pileteid</a>
+        </div>
+    </mat-tab>
+    <mat-tab label="03.04">
+        <div class="filmInfo" *ngFor="let film of filterByDate('03.04.24')">
+            <p class="title"><span class="time">{{ film.time }}</span> {{ film.title }} <span class="ageRating">({{ film.ageRating }})</span></p>
+            <p class="genre">{{ film.genre }}</p>
+            <p>Keel: {{ film.language }}</p>
+            <a class="buyTicket" routerLink="/programme/{{ film.id }}">Osta pileteid</a>
+        </div>
+    </mat-tab>
+    <mat-tab label="04.04">
+        <div class="filmInfo" *ngFor="let film of filterByDate('04.04.24')">
+            <p class="title"><span class="time">{{ film.time }}</span> {{ film.title }} <span class="ageRating">({{ film.ageRating }})</span></p>
+            <p class="genre">{{ film.genre }}</p>
+            <p>Keel: {{ film.language }}</p>
+            <a class="buyTicket" routerLink="/programme/{{ film.id }}">Osta pileteid</a>
+        </div>
+    </mat-tab>
+    <mat-tab label="05.04">
+        <div class="filmInfo" *ngFor="let film of filterByDate('05.04.24')">
+            <p class="title"><span class="time">{{ film.time }}</span> {{ film.title }} <span class="ageRating">({{ film.ageRating }})</span></p>
+            <p class="genre">{{ film.genre }}</p>
+            <p>Keel: {{ film.language }}</p>
+            <a class="buyTicket" routerLink="/programme/{{ film.id }}">Osta pileteid</a>
+        </div>
+    </mat-tab>
+    <mat-tab label="06.04">
+        <div class="filmInfo" *ngFor="let film of filterByDate('06.04.24')">
+            <p class="title"><span class="time">{{ film.time }}</span> {{ film.title }} <span class="ageRating">({{ film.ageRating }})</span></p>
+            <p class="genre">{{ film.genre }}</p>
+            <p>Keel: {{ film.language }}</p>
+            <a class="buyTicket" routerLink="/programme/{{ film.id }}">Osta pileteid</a>
+        </div>
+    </mat-tab>
+    <mat-tab label="07.04">
+        <div class="filmInfo" *ngFor="let film of filterByDate('07.04.24')">
+            <p class="title"><span class="time">{{ film.time }}</span> {{ film.title }} <span class="ageRating">({{ film.ageRating }})</span></p>
+            <p class="genre">{{ film.genre }}</p>
+            <p>Keel: {{ film.language }}</p>
+            <a class="buyTicket" routerLink="/programme/{{ film.id }}">Osta pileteid</a>
+        </div>
+    </mat-tab>
+</mat-tab-group>

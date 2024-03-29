@@ -1,0 +1,16 @@
+.history {
+    display: block;
+    margin: auto;
+    width: 40%;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.filmInfo {
+    display: block;
+    margin: auto;
+    width: 40%;
+    padding: 10px;
+    text-align: center;
+}

@@ -1,0 +1,4 @@
+<div class="history">Vaatamisajalugu</div>
+<div class="filmInfo" *ngFor="let film of films">
+    <p>{{ film.date }}, {{ film.time }} - {{ film.title }} ({{ film.ageRating }}), {{ film.genre }}, {{ film.language }}</p>
+</div>

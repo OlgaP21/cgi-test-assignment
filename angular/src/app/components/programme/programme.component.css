@@ -1,0 +1,64 @@
+.buttonDiv {
+    margin: auto;
+    margin-top: 15px;
+    width: fit-content;
+}
+
+.recommend {
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 20px;
+    background-color: rgb(46, 46, 241);
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    text-decoration-line: none;
+
+}
+
+.recommend:hover {
+    background-color: rgb(1, 1, 141);
+}
+
+.filmInfo {
+    display: block;
+    margin: auto;
+    width: 40%;
+    padding: 10px;
+}
+
+.title {
+    font-size: 30px;
+    text-wrap: wrap;
+}
+
+.time {
+    font-weight: bold;
+}
+
+.ageRating {
+    color: lightgray;
+}
+
+.genre {
+    text-decoration-line: underline;
+}
+
+.buyTicket {
+    padding: 5px;
+    background-color: lightgreen;
+    border-radius: 12px;
+    text-decoration-line: none;
+}
+
+.buyTicket:link {
+    color: black;
+}
+
+.buyTicket:visited {
+    color: black;
+}
+
+.buyTicket:hover {
+    background-color: rgb(63, 232, 63);
+}
